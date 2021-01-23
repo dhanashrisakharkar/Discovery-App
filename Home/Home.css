@@ -7,6 +7,30 @@
     margin: 0;
     padding: 0;
   } */
+  body { 
+    animation: fadeInAnimation ease 3s ;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+html {
+  scroll-behavior: smooth;
+  direction:rtl;
+  float: right;
+}
+.timetable aside,
+.timetable section 
+{
+    float: right;
+}
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
   .html{
     background-size: cover;
     -webkit-background-size: cover;
@@ -651,6 +675,16 @@ height: 100%;
 }
 .right{
   color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:visited  {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
 }
 .footer{
   -webkit-animation: hang 2s infinite  alternate;
